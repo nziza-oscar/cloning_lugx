@@ -5,11 +5,13 @@
     text-decoration: none;
     border: none;
     outline: none;
+    list-style: none;
 }
 
 :root{
     --blue:dodgerblue;
     --red:#F43F5E;
+    --white:#F1F5F9;
 }
 
 .poppins-thin {
@@ -123,4 +125,34 @@
 
   nav{
     background-image: url('../images/footer-bg.jpeg');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 2em;
+  }
+
+  nav ul li ,nav ul li button{
+    padding:8px 10px;
+    border-radius: 30px;
+
+  }
+  nav ul li:first-child{
+    background-color: #60A5FA;
+  }
+
+  nav ul li a{
+    color:var(--white);
+  }
+
+  nav ul li button{
+    background-color: var(--red);
+    color:var(--white);
+    cursor: pointer;
   }
