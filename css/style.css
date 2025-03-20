@@ -206,7 +206,37 @@
     border-radius:26px;
     color: var(--white);
   }
-  
+
   #img img{
     border-radius: 16px;
+  }
+
+  #img{
+    position: relative;
+  }
+  #price{
+    background-color: var(--blue);
+    position: absolute;
+    top:5px;
+    right: 5px;
+    border-radius: 16px;
+    padding: 10px;
+    color:var(--white);
+  }
+  #discount{
+    background-color: var(--red) ;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    font-size: 1em;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    /* transform: translateX(-60%);
+    transform: translateY(-40%);
+    position: absolute; */
+    position: absolute;
+    bottom: 0;
   }
